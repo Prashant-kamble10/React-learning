@@ -66,8 +66,7 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             const filteredRestaurant = listOfRestaurants.filter((res) => {
-              {console.log("res", res)}
-              return res?.info?.avgRatingString > 4 // filter logic
+              return res.info.avgRatingString > 4; // filter logic
             });
             setReastaurantListForSearch(filteredRestaurant);
           }}
